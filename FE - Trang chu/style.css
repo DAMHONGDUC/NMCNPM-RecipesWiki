@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -173,3 +174,78 @@
   }
   
   
+
+.menu{
+	margin: 0 auto;
+	width: 1000px;
+	
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));	
+    gap:10px;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);   
+	margin-left: 15px;
+	margin-right: 15px;
+	
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.menu .box-container .box .image{
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+.menu .box-container .box .content{
+    padding: 5px;
+    padding-top: 0;
+}
+
+
+
+.menu .box-container .box .content h3{
+   
+    font-size: 20px;
+}
+
+.menu .box-container .box .content p{
+    
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+
+.menu .box-container .box .profile img{
+	padding: 5px;
+    padding-top: 0;
+	width: 50px;
+	display: inline-block;
+}
+.menu .box-container .box .profile .content_profile{
+	padding: 5px;
+    padding-top: 0;
+	display: inline-block;
+}
+.menu .box-container .box .profile .content_profile .name{
+	font-weight: bold;
+}
