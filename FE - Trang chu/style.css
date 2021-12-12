@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #c8e3d4;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  height: 60px;
+  align-items: center;
+}
+.btn_menu {
+  margin-left: 30px;
+  flex: 0.3;
+}
+.menu {
+  text-decoration-color: black;
+  text-decoration-color: black;
+  flex: 4.4;
+  display: flex;
+}
+.menu > li {
+  padding: 0 60px;
+}
+.menu > li a {
+  font-size: 23px;
+}
+.btn_account {
+  flex: 0.3;
+}
+.li .WebName .a {
+  font-weight: bold;
+}
