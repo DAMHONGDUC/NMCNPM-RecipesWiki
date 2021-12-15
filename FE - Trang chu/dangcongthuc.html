@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" />
+        <script
+        src="https://kit.fontawesome.com/1147679ae7.js"
+        crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/dangcongthuc.css" />
+        <title>RecipesWiki</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="header__menu">
+                <ul>
+                    <li class="btn_menu"><img src="Image/icon/btn_menu.png" /></li>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Tìm kiếm</a></li>
+                    <li class="active"><a href=""><span >RecipesWiki</span></a></li>
+                    <li><a href="">Chủ đề</a></li>
+                    <li><a href="">About us</a></li>
+                    <li class="btn_account"> <img src="Image/icon/account.png" /></li>
+                </ul>
+            
+            </nav>
+        </header>
+    
+        <div class="container">
+            <div class="head_upload">
+                <img src="Image/icon/upload.jpg" alt="">
+                <h3>Bạn đã đăng hình công thức nấu ăn nào chưa?</h3>
+                <p>Chia sẽ món ăn của bạn đến mọi người nào?</p>
+            </div>
+            <div class="content_upload">
+                <form action="">
+					
+                    <label for="tenmon">Tên món ăn</label>
+                    <input type="text" name="tenmon" class="form-control" placeholder="Tên món ăn">
+                   
+                    <label for="chude">Chủ đề</label>
+                    <div class="form-holder">
+                        <select name="chude" id="form-control" class="form-control">
+                            <option value="1">Món ăn hàng ngày</option>
+                            <option value="2">Món ăn ngày tết</option>
+                            <option value="3">Món ăn ngày hè</option>
+                            <option value="4">Món ăn chay</option>
+                            <option value="5">Tất cả chủ đề</option>
+                        </select>
+                        <i class="zmdi zmdi-chevron-down"></i>
+                    </div>
+
+                    <label for="theloai">Thể loại</label>
+                    <div class="form-holder">
+                        <select name="" id="" class="form-control" style="padding-right: 610px;">
+                            <option value="1">Bữa sáng</option>
+                            <option value="2">Bữa trưa</option>
+                            <option value="3">Bữa tối</option>
+                            <option value="3">Tráng miệng</option>
+                            <option value="3">Ăn nhẹ</option>
+                            <option value="3">Sinh nhật</option>
+                            <option value="3">Giáng sinh</option>
+                            <option value="3">Năm mới</option>
+                            
+                            
+                        </select>
+                        <i class="zmdi zmdi-chevron-down"></i>
+                    </div>
+
+                    <label for="event">Event</label>
+                    <div class="form-holder">
+                        <select name="" id="" class="form-control" style="padding-right: 570px;">
+                            <option value="1">Không tham gia</option>
+                            <option value="2">Ăn trưa</option>
+                            <option value="3">Ăn tối</option>
+                            
+                        </select>
+                        <i class="zmdi zmdi-chevron-down"></i>
+                    </div>
+
+                    
+                   
+					<p>Ảnh minh họa</p>
+                    <input type="file"  id="file-upload" required />
+					
+                    <p>Mô tả</p>
+					<textarea name="" id="" placeholder="Message" class="form-control" style="height: 130px;"></textarea>
+
+                    <p>Nguyên liệu</p>
+					<textarea name="" id="" placeholder="Message" class="form-control" style="height: 130px;"></textarea>
+					<button>Đăng công thức
+						<i class="zmdi zmdi-long-arrow-right"></i>
+					</button>
+				</form>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+        }, 5000);
+        </script>
+    </body>
+</html>
