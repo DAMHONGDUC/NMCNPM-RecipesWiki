@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <script
+      src="https://kit.fontawesome.com/1147679ae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/tao_event.css" />
+    <title>RecipesWiki</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header__menu">
+        <ul>
+          <li class="btn_menu"><img src="Image/icon/btn_menu.png" /></li>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Tìm kiếm</a></li>
+          <li class="active">
+            <a href=""><span>RecipesWiki</span></a>
+          </li>
+          <li><a href="">Chủ đề</a></li>
+          <li><a href="">About us</a></li>
+          <li class="btn_account"><img src="Image/icon/account.png" /></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="head_upload">
+        <img src="Image/tao_event/event.png" alt="" />
+        <h3>
+          Hãy tạo ra một sự kiện tuyệt vời để mọi người cùng tham gia nhé!
+        </h3>
+      </div>
+      <div class="content_upload">
+        <form action="">
+          <label class="form-title" for="tensk">Tên sự kiện</label>
+          <input
+            type="text"
+            name="tensk"
+            class="form-control"
+            placeholder="Nhập tên sự kiện"
+          />
+
+          <label class="form-title" for="tgbatdau">Ngày và giờ bắt đầu</label>
+          <input
+            type="datetime-local"
+            class="form-date"
+            name="ngayvagiobatdau"
+          />
+
+          <label class="form-title" for="tgketthuc">Ngày và giờ kết thúc</label>
+          <input
+            type="datetime-local"
+            class="form-date"
+            name="ngayvagioketthuc"
+          />
+          <label class="form-title" for="giaithuong">Giải thưởng</label>
+          <input
+            type="text"
+            name="giaithuong"
+            class="form-control"
+            placeholder="Nhập giải thưởng"
+          />
+          <label class="form-title" for="mota">Mô tả</label>
+          <textarea
+            name=""
+            id=""
+            placeholder="Hãy mô tả cho sự kiện này"
+            class="form-control"
+            style="height: 130px"
+            style="width: 130px"
+          ></textarea>
+          <p class="form-title">Ảnh minh họa</p>
+          <input type="file" id="file-upload" required />
+          <button>
+            Tạo sự kiện
+            <i class="zmdi zmdi-long-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
