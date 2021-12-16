@@ -101,27 +101,39 @@ body {
   font-weight: bold;
 }
 .form-control {
-  margin-top: 5px;
   height: 40px;
   display: block;
   border: 1px solid #e6e6e6;
   background: none;
   border-radius: 5px;
   padding-left: 20px;
-  padding-right: 500px;
+  padding-right: 20px;
+  width: 100%;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
-.form-control-mota {
-  margin-top: 5px;
-  height: 150px;
+p {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+input[type="file"] {
+  margin-bottom: 20px;
+  display: inline;
+}
+textarea.form-control-textarea {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  height: 130px;
   display: block;
   border: 1px solid #e6e6e6;
   background: none;
   border-radius: 5px;
   padding-left: 20px;
-  padding-right: 500px;
+  padding-right: 20px;
   margin-bottom: 20px;
 }
+
 .form-date {
   margin-top: 5px;
   height: 40px;
@@ -178,6 +190,11 @@ textarea.form-control {
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
+}
+p {
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-top: 25px;
 }
 
 button {
