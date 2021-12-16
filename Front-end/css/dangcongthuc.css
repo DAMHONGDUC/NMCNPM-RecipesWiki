@@ -109,6 +109,7 @@
     p{
         font-weight: bold;
         padding-bottom: 5px;
+        margin-top: 25px;
     }
     .heade-p{
         font-weight: 100;
@@ -121,8 +122,9 @@
         background: none;
         border-radius: 5px;
         padding-left:  20px; 
-        padding-right: 520px;
-        margin-bottom: 20px; 
+        width: 100%;
+        padding-right: 20px;
+        
     }
     .form-control:focus {
         border: 1px solid #f4d5cc; 
@@ -186,8 +188,7 @@
         background: none;
         padding-left:  20px; 
         padding-right: 20px;
-        margin-bottom: 20px;
-          
+         
     }
     
     
