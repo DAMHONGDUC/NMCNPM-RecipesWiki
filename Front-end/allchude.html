@@ -55,7 +55,7 @@
         </div>
 
        <div class="topic-container">
-            <div class="row">
+            <div class="row" id="topic1">
                 <div class="col-md-3">
                     <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
                 </div>
@@ -66,9 +66,9 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="topic2">
                 <div class="col-md-3">
-                    <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
+                    <img class="pic-menu" src="Image/menu/menu-2.jpg" alt="">
                 </div>
                 <div class="col-md-9">
                     <h3>Điểm mặt các món ngon, cứ nhìn là thấy Tết</h3>
@@ -77,9 +77,9 @@
                 </div>
             </div>
 
-            <div class="row" id="topic">
+            <div class="row" id="topic3">
                 <div class="col-md-3">
-                    <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
+                    <img class="pic-menu" src="Image/menu/menu-3.jpg" alt="">
                 </div>
                 <div class="col-md-9">
                     <h3>Điểm mặt các món ngon, cứ nhìn là thấy Tết</h3>
@@ -87,9 +87,9 @@
                         dù xưa hay nay, luôn có những món ăn chỉ cần nhìn là thấy Tết.</p>
                 </div>
             </div>
-            <div class="row" id="topic">
+            <div class="row" id="topic4">
                 <div class="col-md-3">
-                    <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
+                    <img class="pic-menu" src="Image/menu/menu-4.jpg" alt="">
                 </div>
                 <div class="col-md-9">
                     <h3>Điểm mặt các món ngon, cứ nhìn là thấy Tết</h3>
@@ -97,36 +97,8 @@
                         dù xưa hay nay, luôn có những món ăn chỉ cần nhìn là thấy Tết.</p>
                 </div>
             </div>
-            <div class="row" id="topic">
-                <div class="col-md-3">
-                    <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
-                </div>
-                <div class="col-md-9">
-                    <h3>Điểm mặt các món ngon, cứ nhìn là thấy Tết</h3>
-                    <p>Ẩm thực ngày tết ở mỗi vùng miền vô cùng đa dạng và phong phú. Tuy nhiên, dù xa đâu,
-                        dù xưa hay nay, luôn có những món ăn chỉ cần nhìn là thấy Tết.</p>
-                </div>
-            </div>
-            <div class="row" id="topic">
-                <div class="col-md-3">
-                    <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
-                </div>
-                <div class="col-md-9">
-                    <h3>Điểm mặt các món ngon, cứ nhìn là thấy Tết</h3>
-                    <p>Ẩm thực ngày tết ở mỗi vùng miền vô cùng đa dạng và phong phú. Tuy nhiên, dù xa đâu,
-                        dù xưa hay nay, luôn có những món ăn chỉ cần nhìn là thấy Tết.</p>
-                </div>
-            </div>
-            <div class="row" id="topic">
-                <div class="col-md-3">
-                    <img class="pic-menu" src="Image/menu/menu-1.jpg" alt="">
-                </div>
-                <div class="col-md-9">
-                    <h3>Điểm mặt các món ngon, cứ nhìn là thấy Tết</h3>
-                    <p>Ẩm thực ngày tết ở mỗi vùng miền vô cùng đa dạng và phong phú. Tuy nhiên, dù xa đâu,
-                        dù xưa hay nay, luôn có những món ăn chỉ cần nhìn là thấy Tết.</p>
-                </div>
-            </div>
+            
+           
             <div class="showmore" >
                 <button id="showmore">Xem thêm</button>
             </div>
@@ -134,9 +106,13 @@
     </div>
 
 
+
     <script language="javascript">
+
         document.getElementById("showmore").onclick = function () {
-            document.getElementById("topic").style.display = 'block';
+            document.getElementById("topic3").style.display="block";
+            document.getElementById("topic4").style.display="block";
+            
         };
 
     </script>
