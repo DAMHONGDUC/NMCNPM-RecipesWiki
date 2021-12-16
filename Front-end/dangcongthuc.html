@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="css/dangcongthuc.css" />
         <title>RecipesWiki</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </head>
 
     <body>
@@ -36,17 +38,18 @@
             <div class="head_upload">
                 <img src="Image/icon/upload.jpg" alt="">
                 <h3>Bạn đã đăng hình công thức nấu ăn nào chưa?</h3>
-                <p>Chia sẽ món ăn của bạn đến mọi người nào?</p>
+                <p class="heade-p">Chia sẽ món ăn của bạn đến mọi người nào?</p>
             </div>
             <div class="content_upload">
-                <form action="">
+                <form action="" id="dangcongthuc">
 					
-                    <label for="tenmon">Tên món ăn</label>
+                    <p>Tên món ăn</p>
                     <input type="text" name="tenmon" class="form-control" placeholder="Tên món ăn">
                    
-                    <label for="chude">Chủ đề</label>
+                    <p>Chủ đề</p>
                     <div class="form-holder">
                         <select name="chude" id="form-control" class="form-control">
+                            <option value="" disabled selected>Nhập lựa chọn của bạn</option>
                             <option value="1">Món ăn hàng ngày</option>
                             <option value="2">Món ăn ngày tết</option>
                             <option value="3">Món ăn ngày hè</option>
@@ -56,9 +59,10 @@
                         <i class="zmdi zmdi-chevron-down"></i>
                     </div>
 
-                    <label for="theloai">Thể loại</label>
+                    <p>Thể loại</p>
                     <div class="form-holder">
-                        <select name="" id="" class="form-control" style="padding-right: 610px;">
+                        <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Nhập lựa chọn của bạn</option>
                             <option value="1">Bữa sáng</option>
                             <option value="2">Bữa trưa</option>
                             <option value="3">Bữa tối</option>
@@ -73,9 +77,10 @@
                         <i class="zmdi zmdi-chevron-down"></i>
                     </div>
 
-                    <label for="event">Event</label>
+                    <p>Event</p>
                     <div class="form-holder">
-                        <select name="" id="" class="form-control" style="padding-right: 570px;">
+                        <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Nhập lựa chọn của bạn</option>
                             <option value="1">Không tham gia</option>
                             <option value="2">Ăn trưa</option>
                             <option value="3">Ăn tối</option>
@@ -85,31 +90,95 @@
                     </div>
 
                     
-                   
+                    
 					<p>Ảnh minh họa</p>
-                    <input type="file"  id="file-upload" required />
-					
+                    <input type="file" name="hinhanh" id="file-ip-0" accept="image/*" onchange="showPreview(event);">
+					<div class="preview">
+                        <img id="file-ip-0-preview">
+                    </div>
+
                     <p>Mô tả</p>
-					<textarea name="" id="" placeholder="Message" class="form-control" style="height: 130px;"></textarea>
+					<textarea name="mota" id="" placeholder="Hãy nhập mô tả cho món ăn" class="form-control-textarea" ></textarea>
 
                     <p>Nguyên liệu</p>
-					<textarea name="" id="" placeholder="Message" class="form-control" style="height: 130px;"></textarea>
-					<button>Đăng công thức
-						<i class="zmdi zmdi-long-arrow-right"></i>
+					<textarea name="nguyenlieu" id="" placeholder="Hãy nhập các nguyên liệu của món ăn" class="form-control-textarea"></textarea>
+                    
+                
+                    <p>Các bước thực hiện</p>
+                    <br><br>
+                    <div class="step">
+                        <div id="step-child" class="step-child">
+                            <p>Bước 1</p>
+                            <textarea name="buoc1" id="step" placeholder="Hãy nhập các bước thực hiện" 
+                            class="form-control-textarea-buoc"></textarea>
+                       
+                            <input type="file" name="hinhanh" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                            <img id="file-ip-1-preview" class="preview">
+                        </div>        
+                    </div> 
+
+                    <button type="button" onclick="add_step()"> Thêm bước</button> 
+                    <button type="submit">Đăng công thức
 					</button>
 				</form>
             </div>
         </div>
 
         <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 3){
-            counter = 1;
-        }
-        }, 5000);
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+        <script type="text/javascript">
+            var pic =0;
+            function showPreview(event){
+                if(event.target.files.length > 0){
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("file-ip-"+pic+"-preview");
+                preview.src = src;
+                preview.style.width = "400px";
+                preview.style.height ="auto";
+                preview.style.display = "block";  
+                pic++;
+            }
+        }   
+        </script>
+
+        <script>
+            var step = 2;
+            function add_step() {
+                var div = document.getElementById("step-child");
+
+                var p = document.createElement("p");
+                p.append("Bước " + step);
+                var input = document.createElement("textarea");
+                input.name = "buoc" + step;
+                input.className="form-control-textarea-buoc";
+                input.placeholder ="Hãy nhập các bước thực hiện";
+                div.appendChild(p);
+                div.appendChild(input);
+
+                var file = document.createElement("input");
+                file.type="file";
+                file.name="hinhanh";
+                file.id="file-ip-"+step;
+                file.accept="image/*";
+                file.onchange=function(){showPreview(event)};
+                div.appendChild(file);
+               
+                var img  = document.createElement("img");
+                img.id = "file-ip-"+step+"-preview";
+                img.name ="preview";
+                div.appendChild(img);
+                step++;
+                
+            } 
         </script>
     </body>
 </html>
