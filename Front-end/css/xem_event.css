@@ -156,6 +156,23 @@ button:hover i {
   font-size: xx-large;
 }
 
+.head_title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.head_title span {
+  margin-left: 60px;
+  background-color: #fa8072;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 50%;
+}
+
 .event-in4 {
   display: flex;
   justify-content: center;

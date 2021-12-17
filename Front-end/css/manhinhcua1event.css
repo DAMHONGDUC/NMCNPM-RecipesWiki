@@ -68,43 +68,35 @@ body {
 }
 .container {
   margin: 0 auto;
-  margin-top: 30px;
-  width: 900px;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .image-header {
-  height: 300px;
-  display: flex;
+  margin-top: 50px;
+}
+.image-header img {
+  width: 100%;
 }
 
-.image-event {
-  float: left;
-  width: 60%;
-  margin-left: 280px;
+.image-event img {
+  margin-left: 20px;
   margin-top: 60px;
-  width: 500px;
-  height: 300px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
 }
 .image-text {
   margin-top: 60px;
   margin-left: 30px;
-  float: left;
-  width: 40%;
 }
-.event-in4 .image-text .text h3 {
+.row .image-text .text h3 {
   font-weight: bold;
-  font-size: 30;
+  font-size: 22px;
 }
 
-.event-in4 .image-text .text p {
-  font-size: 20;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.row .image-text .text p {
+  font-size: 20px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 
 button {
@@ -116,7 +108,7 @@ button {
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   cursor: pointer;
   font-family: "Montserrat-Medium";
   text-transform: uppercase;
@@ -157,9 +149,7 @@ button:hover i {
 }
 
 .menu {
-  margin-top: 450px;
-  margin-left: 250px;
-  width: 1000px;
+  margin-top: 50px;
 }
 .menu .box-container {
   display: grid;
@@ -214,6 +204,7 @@ button:hover i {
   padding-top: 0;
   width: 20%;
   float: left;
+  margin-top: 5px;
 }
 .menu .box-container .box .profile .content_profile {
   padding: 5px;
@@ -226,9 +217,15 @@ button:hover i {
   font-weight: bold;
   margin-bottom: 8px;
 }
-
 .xemthem {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.xemthem h3 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  text-decoration: underline;
 }
