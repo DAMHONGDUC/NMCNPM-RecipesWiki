@@ -95,8 +95,6 @@ input[type="checkbox"] {
 
 .menu {
   margin-top: 50px;
-  margin-left: 320px;
-  width: 1000px;
 }
 .menu .box-container {
   display: grid;
