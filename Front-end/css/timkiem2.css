@@ -152,7 +152,13 @@ input[type="checkbox"] {
 .menu .box-container .box .profile .content_profile {
   padding: 5px;
   padding-top: 0;
+<<<<<<< Updated upstream
   display: inline-block;
+=======
+  width: 80%;
+  margin-top: 3px;
+  float: left;
+>>>>>>> Stashed changes
 }
 .menu .box-container .box .profile .content_profile .name {
   font-weight: bold;
