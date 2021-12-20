@@ -22,20 +22,16 @@
   </head>
 
   <body>
-      <div class="row main">
-          <div class="col-md-1">
+      
             <div class="Mcontainer">
                 <nav class="navbar">
-                    <div class="row">
-                        <div class="col-md-1">
-                            <div class="hamburger-menu">
-                                <div class="line line-1"></div>
-                                <div class="line line-2"></div>
-                                <div class="line line-3"></div>
-                            </div>
-                        </div>
-                    </div>
                     
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+
                     <div class="mn_logo"><img src="./Image/burger/food_logo.png" alt=""></div>
                     <ul class="nav-list">
                         <li class="nav-item">
@@ -61,69 +57,81 @@
                 </nav>
         
             </div>
-          </div>
-          <div class="col-md-11">
-            <header>
-                <nav class="header__menu">
-                   <ul>
-                     <li class="trangchu"><a href="">Trang chủ</a></li>
-                     <li><a href="">Tìm kiếm</a></li>
-                     <li ><a href=""><span >RecipesWiki</span></a></li>
-                     <li ><a href="">Chủ đề</a></li>
-                     <li class="active"><a href="../aboutus/aboutus.html">About us</a></li>
-                     <li class="btn_account"> <img src="./Image/icon/account.png" /></li>
-                   </ul>  
-                </nav>
-
-               </header>
-           
-               <div class="container">
-           
-                <div class="topic-container">
-                       <div class="row">
-                           <div class="col-md-3">
-                               <img class="pic-menu" src="./Image/aboutus/Duc.png" alt="">
-                           </div>
-                           <div class="col-md-9">
-                               <div class="text">
-                                   <h3>Youngboi Bình Phước</h3>
-                                   <p>Họ và tên: Đàm Hồng Đức <br> MSSV: 19120481</p>
-                               </div>
-                           </div>
-                       </div>
-                </div>
-                <div class="topic-container">
-                       <div class="row">
-                           <div class="col-md-3">
-                               <img class="pic-menu" src="./Image/aboutus/Minh.png" alt="">
-                           </div>
-                           <div class="col-md-9">
-                               <div class="text">
-                                   <h3>Youngboi Lâm Đồng</h3>
-                                   <p>Họ và tên: Lê Thái Bình Minh <br>MSSV: 19120583</p>
-                               </div>
-                           </div>
-                       </div>
-                    </div>    
-                    <div class="topic-container">
-                       <div class="row">
-                           <div class="col-md-3">
-                               <img class="pic-menu" src="./Image/aboutus/Huy.png" alt="">
-                           </div>
-                           <div class="col-md-9">
-                               <div class="text">
-                                   <h3>Youngboi Quảng Nam</h3>
-                                   <p>Họ và tên: Nguyễn Phước Huy <br>MSSV: 19120529</p>
-                               </div>
-                           </div>
-                       </div>
-                  </div>
-                </div>
-               </div>
-        </div>
-      </div>
+          
+    <header class="header__menu" id="myHeader">
+        <nav>
+            <ul>
+                <li class="trangchu"><a href="">Trang chủ</a></li>
+                <li><a href="">Tìm kiếm</a></li>
+                <li ><a href=""><span >RecipesWiki</span></a></li>
+                <li ><a href="">Chủ đề</a></li>
+                <li class="active"><a href="../aboutus/aboutus.html">About us</a></li>
+                <li class="btn_account"> <img src="./Image/icon/account.png" /></li>
+            </ul>  
+        </nav>
+    </header>
     
+    <div class="container-fouder" id="fouder">
+    
+        <div class="topic-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="pic-menu" src="./Image/aboutus/Duc.png" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="text">
+                            <h3>Youngboi Bình Phước</h3>
+                            <p>Họ và tên: Đàm Hồng Đức <br> MSSV: 19120481</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="topic-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="pic-menu" src="./Image/aboutus/Minh.png" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="text">
+                            <h3>Youngboi Lâm Đồng</h3>
+                            <p>Họ và tên: Lê Thái Bình Minh <br>MSSV: 19120583</p>
+                        </div>
+                    </div>
+                </div>
+        </div>    
+        <div class="topic-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="pic-menu" src="./Image/aboutus/Huy.png" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="text">
+                        <h3>Youngboi Quảng Nam</h3>
+                        <p>Họ và tên: Nguyễn Phước Huy <br>MSSV: 19120529</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+      
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
 
+          
+        }
+    </script>
 
     
     <script src="./js/burger.js"></script>
