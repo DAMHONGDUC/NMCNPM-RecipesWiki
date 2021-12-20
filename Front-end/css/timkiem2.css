@@ -159,7 +159,8 @@ input[type="checkbox"] {
 .menu .box-container .box .profile .content_profile {
   padding: 5px;
   padding-top: 0;
-  width: 60%;
+  display: inline-block;
+  width: 80%;
   margin-top: 3px;
   float: left;
 }
