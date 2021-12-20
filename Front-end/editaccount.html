@@ -34,16 +34,25 @@
     </header>
    
     <div class="container">
-          <div class="profile">
-              <div class="head-profile">
-                  <img src="Image/user/Profile.png" alt="">
-                  <h3>Nguyễn Phước Huy</h3>
-              </div>
-          </div>  
+          
 
           
           <div class="content">
             <form action="">
+                  <div class="row">
+                    <div class="col-md-6" >
+                        <h3>Chỉnh sửa Avatar</h3>
+                    </div>
+                    <div class="col-md-6" >
+                        <div class="info">
+                          <input  type="file" placeholder="Tải Avatar" name="hinhanh"  id="file-ip-0"  accept="image/*"  onchange="showPreview(event);"/>
+                        </div>
+                    </div>
+                    <div class="preview">
+                      <img id="file-ip-0-preview" />
+                    </div>
+                 </div>  
+
                 <div class="row">
                     <div class="col-md-6" >
                         <h3>Họ và tên</h3>
@@ -107,7 +116,7 @@
 
    
 
-    </script>
+    <script src="js/showpicture.js"></script>
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
