@@ -74,24 +74,13 @@
       margin: 0 auto;
       
   }
-  .row{
+  .content{
+    margin-top: 100px;
+  }
+.row{
       margin-bottom: 10px;
   }
-  .profile{
-      margin-top: 50px;
-      margin-bottom: 30px;
-  }
-  .profile .head-profile{
-    text-align: center;
-      background-color: #c8e3d4;
-      margin-left: 200px;
-      margin-right: 200px;
-      border-radius: 15px;
-  }
-  .profile .head-profile img{
-      width: 150px;
-  }
-.content h3{
+.content h3{    
     margin-left: 200px;
 }
 .content input{
@@ -103,6 +92,15 @@
     height: 50px;
     border-radius: 10px;
     border: 1px solid black;
+}
+.content input[type="file"]{
+    background-color: white;
+    padding: 0;
+    height: auto;
+    border: none;
+    border-radius: 0px;
+    padding-top: 20px;
+
 }
 .edit{
     margin-top: 40px;
