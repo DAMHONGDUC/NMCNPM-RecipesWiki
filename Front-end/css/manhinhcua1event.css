@@ -53,7 +53,7 @@ body {
   margin-right: 0;
 }
 
-.header__menu ul li a {
+.header__menu ul li .menu-item {
   font-size: 23px;
   color: black;
   display: block;
@@ -65,7 +65,7 @@ body {
   font-weight: bold;
 }
 
-.header__menu ul li a:after {
+.header__menu ul li .menu-item:after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -188,6 +188,7 @@ body {
 .change {
   left: 0;
 }
+
 .has-submenu {
   position: relative;
   z-index: 200;
@@ -215,13 +216,22 @@ body {
   display: block;
   width: 100%;
 }
-
+.has-submenu .submenu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.has-submenu .submenu li a:hover {
+  box-shadow: 0 2px black;
+  transition: box-shadow 0.5s;
+}
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
+
 .container {
   margin: 0 auto;
 }
