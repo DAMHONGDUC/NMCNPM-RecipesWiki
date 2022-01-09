@@ -64,7 +64,7 @@
       margin-right: 0;
   }
   
-  .header__menu ul li a {
+  .header__menu ul li .menu-item {
     font-size: 23px;
     color: black;
     display: block;
@@ -76,7 +76,7 @@
     font-weight: bold;
   }
   
-  .header__menu ul li a:after {
+  .header__menu ul li .menu-item:after {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -237,7 +237,14 @@
   
 }
 .has-submenu .submenu li a{
-  text-decoration: none !important;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.has-submenu .submenu li a:hover{
+  
+ box-shadow: 0 2px black;
+ transition: box-shadow 0.5s; 
 }
 .sticky {
   position: fixed;
@@ -251,7 +258,6 @@
   top: 100px;
   margin-top: 100px;
   
-
 }
 
 
