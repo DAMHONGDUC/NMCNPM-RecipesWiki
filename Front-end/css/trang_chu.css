@@ -8,6 +8,7 @@ body {
   background: #f7f7f7;
 }
 
+
 .Mcontainer {
   position: absolute;
   z-index: 2;
@@ -27,14 +28,17 @@ body {
 
 .hot-tag .nav-tag {
   margin-bottom: 15px;
+
 }
 
 .header__menu ul li {
   padding-top: 10px;
   list-style: none;
   display: inline-block;
+
   padding-right: 70px;
   padding-left: 70px;
+
 }
 
 .header__menu ul li.active a:after {
@@ -80,6 +84,7 @@ body {
   -ms-transform: scale(0);
   transform: scale(0);
 }
+
 .header__menu .btn_menu {
   position: absolute;
   top: 0;

@@ -29,79 +29,81 @@
 
   <body>
     <div class="Mcontainer">
-      <nav class="navbar">
-        <div class="hamburger-menu">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-        </div>
 
-        <div class="mn_logo">
-          <img src="./Image/burger/food_logo.png" alt="" />
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Tải lên công thức</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Sự kiện</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Sự kiện của tôi</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Bộ sưu tập của tôi</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Món của tôi</a>
-          </li>
-          <div class="hot-tag">
-            <li class="nav-item">
-              <p>Hot tag</p>
-            </li>
-            <li class="nav-tag">
-              <a href="#" class="nav-link">#monanngayTet</a>
-            </li>
-            <li class="nav-tag">
-              <a href="#" class="nav-link">#AnSang</a>
-            </li>
-            <li class="nav-tag">
-              <a href="#" class="nav-link">#AnTrua</a>
-            </li>
-            <li class="nav-tag">
-              <a href="#" class="nav-link">#AnToi</a>
-            </li>
-            <li class="nav-tag">
-              <a href="#" class="nav-link">#Dauhu</a>
-            </li>
-          </div>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <div class="mn_logo"><img src="./Image/burger/food_logo.png" alt=""></div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tải lên công thức</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sự kiện</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sự kiện của tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Bộ sưu tập của tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Món của tôi</a>
+                </li>
+                <div class="hot-tag">
+                    <li class="nav-item">
+                        <p>Hot tag</p>
+                    </li>
+                    <li class="nav-tag">
+                        <a href="#" class="nav-link">#monanngayTet</a>
+                    </li>
+                    <li class="nav-tag">
+                        <a href="#" class="nav-link">#AnSang</a>
+                    </li>
+                    <li class="nav-tag">
+                        <a href="#" class="nav-link">#AnTrua</a>
+                    </li>
+                    <li class="nav-tag">
+                        <a href="#" class="nav-link">#AnToi</a>
+                    </li>
+                    <li class="nav-tag">
+                        <a href="#" class="nav-link">#Dauhu</a>
+                    </li>
+                </div>
+
+            </ul>
+        </nav>
+
     </div>
-
-    <header class="header__menu" id="myHeader">
-      <nav>
-        <ul>
-          <li><a href="./trang_chu.html">Trang chủ</a></li>
-          <li><a href="./search1.html">Tìm kiếm</a></li>
-          <li>
-            <a href="./trang_chu.html"><span>RecipesWiki</span></a>
-          </li>
-          <li class="has-submenu">
+  
+<header class="header__menu" id="myHeader">
+<nav>
+    <ul>
+        <li><a href="./trang_chu.html">Trang chủ</a></li>
+        <li><a href="./search1.html">Tìm kiếm</a></li>
+        <li ><a href="./trang_chu.html"><span >RecipesWiki</span></a></li>
+        <li class="has-submenu">
             <a href="">Chủ đề</a>
             <ul class="submenu">
-              <li><a href="">Ăn sáng</a></li>
+              <li><a href="" >Ăn sáng</a></li>
               <li><a href="">Ăn trưa</a></li>
-              <li><a href="">Ăn sáng</a></li>
+              <li><a href="" >Ăn sáng</a></li>
+              
             </ul>
-          </li>
-          <li class="active"><a href="./aboutus.html">About us</a></li>
-          <li class="btn_account">
-            <a href="./account.html"><img src="./Image/icon/account.png" /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        </li>
+        <li class="active"><a href="./aboutus.html">About us</a></li>
+        <li class="btn_account"> <a href="./account.html"><img src="./Image/icon/account.png" /></a></li>
+    </ul>  
+</nav>
+</header>
+   
+    <div class="container">
+
 
     <div class="container">
       <div class="search-container">
@@ -211,6 +213,24 @@
         }
       }
     </script>
+
+     <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+
+          
+        }
+    </script>
+
     <script src="./js/burger.js"></script>
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript -->
