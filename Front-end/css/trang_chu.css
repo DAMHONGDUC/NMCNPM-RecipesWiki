@@ -30,6 +30,7 @@ body {
 .has-submenu .submenu li {
   padding: 8px 16px;
   font-size: 18px;
+  width: 100%;
 }
 
 .header__menu {
