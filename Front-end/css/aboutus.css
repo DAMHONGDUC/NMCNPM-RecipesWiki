@@ -29,6 +29,14 @@
 
   }
   
+  .hot-tag{
+    background-color: white;
+
+  }
+
+  .hot-tag .nav-tag{
+    margin-bottom: 15px;
+  }
   
   .header__menu ul li {
 	
