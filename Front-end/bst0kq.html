@@ -69,7 +69,7 @@
         </ul>
       </nav>
     </div>
-    
+
     <header class="header__menu" id="myHeader">
 
         <nav>
@@ -107,22 +107,26 @@
     </div>
 
     <script>
-      window.onscroll = function() {myFunction()};
-      
+
+      window.onscroll = function () {
+        myFunction();
+      };
+
       var header = document.getElementById("myHeader");
       var sticky = header.offsetTop;
-      
+
+
       function myFunction() {
         if (window.pageYOffset > sticky) {
           header.classList.add("sticky");
         } else {
           header.classList.remove("sticky");
-        }
-
+        
         
       }
   </script>
   <script src="./js/burger.js"></script>
+
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
