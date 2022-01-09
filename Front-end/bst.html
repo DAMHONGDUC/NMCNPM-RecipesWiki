@@ -19,19 +19,79 @@
   </head>
 
   <body>
-    <header>
-     <nav class="header__menu">
-        <ul>
-          <li class="btn_menu"><img src="Image/icon/btn_menu.png" /></li>
-          <li><a href="">Trang chủ</a></li>
-          <li><a href="">Tìm kiếm</a></li>
-          <li class="active"><a href=""><span >RecipesWiki</span></a></li>
-          <li><a href="">Chủ đề</a></li>
-          <li><a href="">About us</a></li>
-          <li class="btn_account"> <img src="Image/icon/account.png" /></li>
-        </ul>
-     </nav>
-    </header>
+    <div class="Mcontainer">
+        <nav class="navbar">
+          <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+  
+          <div class="mn_logo">
+            <img src="./Image/burger/food_logo.png" alt="" />
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Tải lên công thức</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sự kiện</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sự kiện của tôi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Bộ sưu tập của tôi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Món của tôi</a>
+            </li>
+            <div class="hot-tag">
+              <li class="nav-item">
+                <p>Hot tag</p>
+              </li>
+              <li class="nav-tag">
+                <a href="#" class="nav-link">#monanngayTet</a>
+              </li>
+              <li class="nav-tag">
+                <a href="#" class="nav-link">#AnSang</a>
+              </li>
+              <li class="nav-tag">
+                <a href="#" class="nav-link">#AnTrua</a>
+              </li>
+              <li class="nav-tag">
+                <a href="#" class="nav-link">#AnToi</a>
+              </li>
+              <li class="nav-tag">
+                <a href="#" class="nav-link">#Dauhu</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      
+      <header class="header__menu" id="myHeader">
+  
+          <nav>
+              <ul>
+                  <li class=""><a href="./trang_chu.html" class="menu-item">Trang chủ</a></li>
+                  <li class=""><a href="./search1.html" class="menu-item">Tìm kiếm</a></li>
+                  <li class="" ><a href="./trang_chu.html" class="menu-item"><span >RecipesWiki</span></a></li>
+                  <li class="has-submenu">
+                      <a href="" class="menu-item">Chủ đề</a>
+                      <ul class="submenu">
+                        <li><a href="#"  >Ăn sáng</a></li>
+                        <li><a href="#" >Ăn trưa</a></li>
+                        <li><a href="#"  >Ăn sáng</a></li>
+                        
+                      </ul>
+                  </li>
+                  <li class="active"><a href="./aboutus.html" class="menu-item">About us</a></li>
+                  <li class="btn_account"> <a href="./account.html" class="menu-item"><img src="./Image/icon/account.png" /></a></li>
+              </ul>  
+          </nav>
+  
+      </header>
    
     <div class="container">
         <div class="row">
@@ -40,7 +100,7 @@
             </div>
         </div>
           <div class="content">
-                <img src="Image/menu/menu-1.jpg" alt="">
+                <img src="Image/BST/pic1.jpg" alt="">
                 <div class="content-text">
                     <h3>Khổ qua nhồi thịt</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aspernatur neque? Esse debitis soluta alias rem, delectus excepturi sapiente laborum provident molestias possimus quas reprehenderit eum velit consectetur praesentium doloribus?</p>
@@ -75,8 +135,23 @@
 
 
    
-
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+  
+          
+        }
     </script>
+    <script src="./js/burger.js"></script>
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
