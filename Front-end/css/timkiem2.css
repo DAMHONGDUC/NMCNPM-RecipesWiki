@@ -29,12 +29,15 @@ body {
   margin-bottom: 15px;
 }
 
+.header__menu .menu-ul {
+  margin-left: 8%;
+}
 .header__menu ul li {
   padding-top: 10px;
   list-style: none;
   display: inline-block;
-  padding-right: 70px;
-  padding-left: 70px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .header__menu ul li.active a:after {
@@ -365,4 +368,8 @@ input[type="checkbox"] {
   margin-bottom: 60px;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.hot-tag .nav-tag a {
+  color: blue;
 }
