@@ -10,100 +10,103 @@
       background: #F7F7F7;
   }
   
-.Mcontainer{
-	position: absolute;
-	z-index: 2;
-  margin-top: 60px;
-}
-
-
-  .header__menu {
-	
-    width: 100%;
-    height: 60px;
-    background-color: #c8e3d4;
-    margin-top: 0;
-  	
+  .Mcontainer{
+    position: absolute;
+    z-index: 2;
+    margin-top: 60px;
+  }
+  
+  
+    .header__menu {
     
-
-  }
-  
-  .hot-tag{
-    background-color: white;
-
-  }
-
-  .hot-tag .nav-tag{
-    margin-bottom: 15px;
-  }
-  
-  .header__menu ul li {
-	
-    padding-top: 10px;
-    list-style: none;
-    display: inline-block;
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-  
-  .header__menu ul li.active a:after {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-  }
-  
-  .header__menu ul li:hover a:after {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-  }
-  
-  .header__menu ul li:last-child {
-      margin-right: 0;
-  }
-  
-  .header__menu ul li .menu-item {
-    font-size: 23px;
-    color: black;
-    display: block;
-    position: relative;
-    padding: 3px 0;
-    text-decoration: none;
-  }
-  .header__menu ul li a span{
-    font-weight: bold;
-  }
-  
-  .header__menu ul li .menu-item:after {
-      position: absolute;
-      left: 0;
-      bottom: 0;
       width: 100%;
-      height: 2px;
-      background: black;
-      content: "";
-      -webkit-transition: all, 0.5s;
-      -o-transition: all, 0.5s;
-      transition: all, 0.5s;
-      -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-  }
-  .header__menu .btn_menu{
-    position: absolute;
-     top: 0;
-     left: 15px;
-     margin-left: 0;
-  }
-
-  .header__menu .btn_account{
-	padding-left: 0;
-	padding-right: 0;
-    position: absolute;
-    top: 0;
-    right: 30px;
-  }
+      height: 60px;
+      background-color: #c8e3d4;
+      margin-top: 0;
+      
+      
   
+    }
+    
+    .hot-tag{
+      background-color: white;
+  
+    }
+  
+    .hot-tag .nav-tag{
+      margin-bottom: 15px;
+    }
+    
+    .header__menu .menu-ul{
+      margin-left: 8%;
+    }
+    .header__menu ul li {
+    
+      padding-top: 10px;
+      list-style: none;
+      display: inline-block;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+    
+    .header__menu ul li.active a:after {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    .header__menu ul li:hover a:after {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    .header__menu ul li:last-child {
+        margin-right: 0;
+    }
+    
+    .header__menu ul li .menu-item {
+      font-size: 23px;
+      color: black;
+      display: block;
+      position: relative;
+      padding: 3px 0;
+      text-decoration: none;
+    }
+    .header__menu ul li a span{
+      font-weight: bold;
+    }
+    
+    .header__menu ul li .menu-item:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: black;
+        content: "";
+        -webkit-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+    .header__menu .btn_menu{
+      position: absolute;
+       top: 0;
+       left: 15px;
+       margin-left: 0;
+    }
+  
+    .header__menu .btn_account{
+    padding-left: 0;
+    padding-right: 0;
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
+    
 /* Het code menu neeee */
  
 
